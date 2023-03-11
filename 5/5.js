@@ -4,7 +4,7 @@ function handle(){
     let c=+document.getElementById("enterc").value
     let delta=(b*b)-(4*a*c)
     if(a===0&&b===0&&c===0){
-        document.getElementById("result").innerHTML="Xác định giá trị cho a,b,c"
+        document.getElementById("result").innerHTML="Xác định lai giá trị cho a,b,c"
     }else if(a===0){
         v=(-c/b)
         document.getElementById("result").innerHTML=`Phương trình có nghiệm x=${v}`
