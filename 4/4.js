@@ -4,11 +4,7 @@ function tocheck(){
       let c=+document.getElementById("3").value
     if(a===0||b===0||c===0){
         document.getElementById("result").innerHTML=` không phải tam giác`
-        return
-    }
-
-
-    if (a===b&&a===c&&b===c){
+    }else if (a===b&&a===c&&b===c){
         document.getElementById("result").innerHTML=`tam giác đều`
     }else if (a*a+b*b===c*c||a*a+c*c===b*b||b*b+c*c===a*a){
         document.getElementById("result").innerHTML=` tam giác vuông`
@@ -16,7 +12,6 @@ function tocheck(){
         document.getElementById("result").innerHTML=`không phải là tam giác`
     }else if((a===b && (a+b)>c)||(a===c && (a+c)>b)||(b===c && (b+c)>a)){
         document.getElementById("result").innerHTML="tam giác cân"
-
     }else {
         document.getElementById("result").innerHTML="tam giác thường"
     }
